@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- use header -->
+     <div id="header">
+<div class="container">
+    <nav>
+       <h1>Suraj.</h1>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portrfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fa-2x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fa-2x" 
+        onclick="openmenu()" ></i>
+    </nav>
+  <div class="header-text">
+      <h1>Hii,there <br>i am <span>  suraj Paul</span></h1>
+      <p>Front-End Developer</p>
+  </div>
+</div>
+     </div>
+
+     <!-- about section  -->
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.JPG" alt="">
+                    
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a passionate web developer with a keen focus on creating dynamic and responsive web experiences. Currently, I’m deep into an exciting e-commerce project, where I’m leveraging my skills to ensure that the site performs flawlessly across all devices. My expertise spans a wide range of technologies, and I’m always eager to tackle new challenges and explore innovative solutions in the ever-evolving world of web development..</p>
+
+                    <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills</p>
+                <p class="tab-links"
+                onclick="opentab('education')">Education</p>
+                <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                    </div>
+                    <!-- tab-contents.1  -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span>
+                            <br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span>
+                            <br> Designing Web application</li>
+                            <li> <span>responsive web</span>
+                                <br>complete website responsive
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    <!-- tab-contents.2  -->
+                    <div class="tab-contents" id="education">
+                       
+                        <ul>
+                            <li><span>Currently</span>
+                            <br> Studing at TACT bhubneswar</li>
+                            <li><span>2025</span>
+                            <br> passout from TACT</li>
+                            
+                        </ul>
+                    </div>
+                    <!-- tab-contents.3  -->
+                    <!-- <div class="tab-contents" id="experience">
+                        
+                        <ul>
+                            <li><span>2021-current</span>
+                            <br> Designing Web/App interfaces</li>
+                            <li><span>2013-2023</span>
+                            <br> team lead at abc pvt.ltd</li>
+                            
+                        </ul> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!---------- services  ------------------->
+       <div id="services">
+        <div class="container">
+           <h1 class="sub-title">My services</h1>
+           <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code fa-2x"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis velit sequi culpa perferendis, ullam sint dicta obcaecati. Sit est harum dolores repudiandae, dignissimos neque dolorem?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple fa-2x"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis velit sequi culpa perferendis, ullam sint dicta obcaecati. Sit est harum dolores repudiandae, dignissimos neque dolorem?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-google-play fa-2x"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis velit sequi culpa perferendis, ullam sint dicta obcaecati. Sit est harum dolores repudiandae, dignissimos neque dolorem?</p>
+                <a href="#">Learn more</a>
+            </div>
+
+           </div>
+
+        </div>
+       </div>
+
+<!---------- Portfolio ----- -->
+<div class="portrfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layers">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti sint ipsa sit dolorem in aliquid?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- qr code  -->
+            <div class="work">
+                <img src="images/header_QR-code-generator_2x.jpg" alt="">
+                <div class="layers">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti sint ipsa sit dolorem in aliquid?</p>
+                    <a href="https://paulsuraj.github.io/QR-code-gen/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layers">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti sint ipsa sit dolorem in aliquid?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</div>
+<!------------- contact form -------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>paulsurraj@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>9019513078</p>
+
+            <div class="social-icons">
+             <a href="#"> <i class="fa-brands fa-facebook  fa-2x" style="color: #74C0FC;"></i></a>
+             <a href="#"> <i class="fa-brands fa-instagram fa-2x" style="color: #d41698;"></i></a>
+             <a href="#"> <i class="fa-brands fa-linkedin  fa-2x" style="color: #0f5ee6;"></i></a>
+             <a href="#"> <i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV 
+                <i class="fa-solid fa-download fa-bounce"></i></a>
+            </div>
+
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="01936e5f-1dc4-4ddf-b0a5-c1724a175b9e">
+                    <input type="text" placeholder=" Enter  Name" required>
+                    <input type="email" placeholder="Enter  Email" required>
+                   <textarea name="message" placeholder="Enter Message.."  required></textarea>
+                      <button type="submit" class=" submit">Submit</button>
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © paul.2024 <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- html 
+<div class="container">
+    <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+</div> -->
+
+<!-- css  -->
+  <!-- .conainer{
+    position:relative;
+    w 100%;
+    h:100vh;
+    overflow:hidden;
+
+  }
+  .bubbles{
+    position:relative;
+    dis
+  } -->
